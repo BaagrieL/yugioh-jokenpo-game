@@ -1,0 +1,175 @@
+html {
+  overflow: hidden;
+}
+
+body {
+  cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
+.start__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right, #ff6, #d27d2c);
+  -webkit-background-clip: text;
+          background-clip: text;
+  height: 500px;
+  width: 460px;
+  border-radius: 1rem;
+  color: transparent;
+  font-size: small;
+}
+.start__container button {
+  width: 40%;
+  text-transform: uppercase;
+}
+
+a,
+button,
+img:hover,
+button:hover,
+a:hover {
+  cursor: url("../assets/cursor/yamiyugicursorGLOW.png"), auto;
+}
+
+.bg-video {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.bg-video .video {
+  height: 100vh;
+  max-width: 100%;
+}
+.bg-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgb(0, 0, 0) 100%);
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  display: none;
+  height: 100vh;
+}
+
+.container__left {
+  width: 35%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.container__left .score_box {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.container__left .menu_avatar {
+  height: 228px;
+}
+.container__left .card_details {
+  background-color: #fff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+}
+.container__left .card_details #card_name {
+  font-size: 0.8rem;
+}
+.container__left .card_details #card_type {
+  font-size: 1rem;
+}
+
+.frame {
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+.container__right {
+  width: 65%;
+}
+.container__right .card-box__container {
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+.card-versus__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  height: 300px;
+  max-width: 100%;
+}
+
+.versus-top, .versus-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.versus-bottom {
+  margin-top: 1rem;
+}
+
+#next-duel {
+  display: none;
+}
+
+.card-box {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-infield {
+  height: 11.2rem;
+  width: 8rem;
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 500px) {
+  .container__left {
+    min-width: 140px;
+  }
+  .container__left .score_box, .container__left .card_details {
+    padding: 0.7rem;
+    text-align: center;
+    line-height: 2rem;
+    line-break: strict;
+  }
+}/*# sourceMappingURL=main.css.map */

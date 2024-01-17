@@ -5,4 +5,9 @@
   border: 0;
   font-family: "Press Start 2P", cursive;
   user-select: none;
+  list-style: none;
+}
+
+html {
+  overflow: hidden;
 }
